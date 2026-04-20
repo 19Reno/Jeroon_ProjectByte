@@ -1,0 +1,9 @@
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform.lock.hcl
+*.pem
+jrbyte
+jrbyte.pub
+.DS_Store
