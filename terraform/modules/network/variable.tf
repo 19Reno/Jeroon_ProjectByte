@@ -1,0 +1,9 @@
+variable "vnet_name" {}
+variable "location" {}
+variable "resource_group_name" {}
+variable "vnet_cidr" {}
+variable "public_subnet_name" {}
+variable "public_subnet_cidr" {}
+variable "private_subnet_name" {}
+variable "private_subnet_cidr" {}
+variable "environment" {}
