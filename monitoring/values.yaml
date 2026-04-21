@@ -1,0 +1,29 @@
+grafana:
+  service:
+    type: LoadBalancer
+
+prometheus:
+  prometheusSpec:
+    resources:
+      requests:
+        cpu: 100m
+        memory: 256Mi
+
+alertmanager:
+  alertmanagerSpec:
+    resources:
+      requests:
+        cpu: 50m
+        memory: 64Mi
+
+nodeExporter:
+  resources:
+    requests:
+      cpu: 50m
+      memory: 32Mi
+
+kubeStateMetrics:
+  resources:
+    requests:
+      cpu: 50m
+      memory: 64Mi
