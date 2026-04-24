@@ -40,16 +40,16 @@ module "compute" {
   subnet_id           = module.network.private_subnet_id
 }
 
-#module "database" {
-  #source              = "./modules/database"
-  #location            = var.db_location
-  #resource_group_name = azurerm_resource_group.main.name
-  #environment         = var.environment
-  #db_name             = var.db_name
-  #db_username         = var.db_username
-  #db_password         = var.db_password
- # subnet_id           = module.network.private_subnet_id
-#}
+module "database" {
+  source              = "./modules/database"
+  location            = var.db_location
+  resource_group_name = azurerm_resource_group.main.name
+  environment         = var.environment
+  db_name             = var.db_name
+  db_username         = var.db_username
+  db_password         = var.db_password
+  subnet_id           = module.network.private_subnet_id
+}
 
 module "loadbalancer" {
   source              = "./modules/loadbalancer"

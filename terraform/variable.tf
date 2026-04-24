@@ -73,7 +73,7 @@ variable "admin_username" {
 variable "db_name" {
   description = "PostgreSQL server name"
   type        = string
-  default     = "db-8byte-westeurope"
+  default     = "db-8byte-san"
 
 }
 
@@ -95,8 +95,8 @@ variable "lb_name" {
   default     = "lb-main"
 }
 
-#variable "db_location" {
- # description = "Location for PostgreSQL"
-  #type        = string
-  #default     = "westeurope"
-#}
+variable "db_location" {
+  description = "Location for PostgreSQL"
+  type        = string
+  default     = "southafricanorth"
+}
